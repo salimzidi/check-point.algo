@@ -1,0 +1,33 @@
+ALGORITHM sentence-length-algo1
+VAR
+    sentence : STRING := "hello world."
+    count : INTEGER := 0
+BEGIN
+    FOR i FROM 0 TO sentence.length -1 STEP 1  DO
+        IF (sentence[i] != ".") THEN
+            count := count +1 
+        END_IF
+    END_FOR
+END
+ALGORITHM nb-of-words
+VAR
+    sentence : STRING := "hello world."
+    count : INTEGER := 1
+BEGIN
+    FOR i FROM 0 TO sentence.length -2 STEP 1  DO
+        IF (sentence[i] = " ") THEN
+            count := count +1 
+        END_IF
+    END_FOR
+END
+ALGORITHM  nb-of-words
+VAR
+    sentence : STRING := "hello world."
+    count : INTEGER := 1
+BEGIN
+    FOR i FROM 0 TO sentence.length -2 STEP 1  DO
+        IF (sentence[i] = 'a' 'e' 'i' 'o' 'u' 'y') THEN
+            count := count +1 
+        END_IF
+    END_FOR
+END
